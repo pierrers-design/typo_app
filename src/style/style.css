@@ -1,0 +1,124 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+	font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+	html {
+		font-family: "Inter var", sans-serif;
+	}
+}
+
+body {
+	font-family: "Inter";
+	overflow: hidden;
+	display: flex;
+	cursor: crosshair;
+}
+
+path:hover,
+button:hover {
+	cursor: pointer;
+}
+
+.global_glyphe {
+	width: 85vw;
+	height: 100vh;
+}
+
+.composition_contrast {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	height: 100%;
+	filter: contrast(5000%);
+}
+
+.composition_blur {
+	width: 100%;
+	height: 100%;
+	filter: blur(8px);
+}
+
+.draggable {
+	z-index: 10;
+}
+
+path {
+	fill: none;
+	stroke: rgb(0, 0, 0);
+}
+
+#shape_01 {
+	width: 112.5px;
+	height: 225px;
+}
+
+#shape_02 {
+	width: 37.5px;
+	height: 150px;
+}
+
+#shape_03 {
+	width: 150px;
+	height: 150px;
+}
+
+#shape_04 {
+	width: 75px;
+	height: 75px;
+}
+
+#shape_05 {
+	width: 75px;
+	height: 225px;
+}
+
+#shape_06 {
+	width: 30px;
+	height: 225px;
+}
+
+#shape_07 {
+	width: 150px;
+	height: 37.5px;
+}
+
+#shape_08 {
+	width: 150px;
+	height: 150px;
+}
+
+.global_range {
+	width: 15vw;
+	height: 100vh;
+	background-color: rgb(230, 230, 230);
+	display: flex;
+	flex-direction: column;
+}
+
+button, #box_useless {
+	font-family: "Inter";
+	font-weight: 300;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+}
+
+button, p {
+	text-align: center;
+	font-size: 1vw;
+	line-height: 3vh;
+	padding: 1vh;
+}
+
+button {
+	margin: 2vh 2vh 1vh 2vh;
+}
+
+button:hover {
+	font-weight: 500;
+}
+
+#box_useless {
+	margin: 1vh 2vh 2vh 2vh;
+	height: 90%;
+}
