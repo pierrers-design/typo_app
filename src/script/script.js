@@ -8,15 +8,6 @@ function make_number(min, max) {
 	return result;
 }
 
-$("#shape_01").css("rotate", +make_number(-20, 10) + "deg");
-$("#shape_02").css("rotate", +make_number(-20, 20) + "deg");
-$("#shape_03").css("rotate", +make_number(0, 360) + "deg");
-$("#shape_04").css("rotate", +make_number(0, 360) + "deg");
-$("#shape_05").css("rotate", +make_number(-10, 10) + "deg");
-$("#shape_06").css("rotate", +make_number(-10, 10) + "deg");
-$("#shape_07").css("rotate", +make_number(-30, 30) + "deg");
-$("#shape_08").css("rotate", +make_number(0, 360) + "deg");
-
 $("#shape_01").html(
 	'<path d="M' +
 		make_number(60, 70) +
@@ -270,5 +261,54 @@ $("#shape_08").html(
 		make_number(85, 95) +
 		'" />'
 );
+
+/*$("#shape_01").css("transform",  "rotate(", + make_number(-20, 10) + "deg)");
+$("#shape_02").css("transform",  "rotate(", + make_number(-20, 20) + "deg)");
+$("#shape_03").css("transform",  "rotate(", + make_number(0, 360) + "deg)");
+$("#shape_04").css("transform",  "rotate(", + make_number(0, 360) + "deg)");
+$("#shape_05").css("transform",  "rotate(", + make_number(-10, 10) + "deg)");
+$("#shape_06").css("transform",  "rotate(", + make_number(-10, 10) + "deg)");
+$("#shape_07").css("transform",  "rotate(", + make_number(-30, 30) + "deg)");
+$("#shape_08").css("transform",  "rotate(", + make_number(0, 360) + "deg)");*/
+
+$("#shape_01").css({
+	"-webkit-transform": "rotate(" + make_number(-20, 10) + "deg)",
+	"transform": "rotate(" + make_number(-20, 10) + "deg)",
+});
+
+$("#shape_02").css({
+	"-webkit-transform": "rotate(" + make_number(-20, 20) + "deg)",
+	"transform": "rotate(" + make_number(-20, 20) + "deg)",
+});
+
+$("#shape_03").css({
+	"-webkit-transform": "rotate(" + make_number(0, 360) + "deg)",
+	"transform": "rotate(" + make_number(0, 360) + "deg)",
+});
+
+$("#shape_04").css({
+	"-webkit-transform": "rotate(" + make_number(0, 360) + "deg)",
+	"transform": "rotate(" + make_number(0, 360) + "deg)",
+});
+
+$("#shape_05").css({
+	"-webkit-transform": "rotate(" + make_number(-10, 10) + "deg)",
+	"transform": "rotate(" + make_number(-10, 10) + "deg)",
+});
+
+$("#shape_06").css({
+	"-webkit-transform": "rotate(" + make_number(-10, 10) + "deg)",
+	"transform": "rotate(" + make_number(-10, 10) + "deg)",
+});
+
+$("#shape_07").css({
+	"-webkit-transform": "rotate(" + make_number(-30, 30) + "deg)",
+	"transform": "rotate(" + make_number(-30, 30) + "deg)",
+});
+
+$("#shape_08").css({
+	"-webkit-transform": "rotate(" + make_number(0, 360) + "deg)",
+	"transform": "rotate(" + make_number(0, 360) + "deg)",
+});
 
 $("path").css("stroke-width", +make_number(9, 9) + "px");
