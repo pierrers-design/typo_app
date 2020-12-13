@@ -10,6 +10,7 @@ html {
 
 body {
 	font-family: "Inter";
+	font-weight: 300;
 	overflow: hidden;
 	display: flex;
 }
@@ -20,8 +21,17 @@ button:hover {
 }
 
 .global_glyphe {
-	width: 85vw;
+	width: 80vw;
 	height: 100vh;
+}
+
+.global_range {
+	width: 20vw;
+	height: 100vh;
+	padding: 1vh;
+	background-color: rgb(230, 230, 230);
+	display: flex;
+	flex-direction: column;
 }
 
 .composition_contrast {
@@ -37,69 +47,64 @@ button:hover {
 	filter: blur(8px);
 }
 
+.global {
+	padding: 2vh 4vh;
+}
+
 .draggable {
 	z-index: 10;
 }
 
+.shape {
+	margin: 1vh;
+	display: inline-block;
+	vertical-align: top;
+}
+
 path {
 	fill: none;
+	stroke-width: 10px;
 	stroke: rgb(0, 0, 0);
 }
 
 #shape_01 {
-	width: 112.5px;
-	height: 225px;
+	width: 37.5px;
+	height: 187.5px;
 }
 
 #shape_02 {
-	width: 37.5px;
+	width: 150px;
 	height: 150px;
 }
 
 #shape_03 {
-	width: 150px;
-	height: 150px;
+	width: 37.5px;
+	height: 375px;
 }
 
 #shape_04 {
-	width: 75px;
-	height: 75px;
-}
-
-#shape_05 {
-	width: 75px;
-	height: 225px;
-}
-
-#shape_06 {
-	width: 30px;
-	height: 225px;
-}
-
-#shape_07 {
 	width: 150px;
 	height: 37.5px;
 }
 
-#shape_08 {
+#shape_05 {
 	width: 150px;
 	height: 150px;
 }
 
-.global_range {
-	width: 15vw;
-	height: 100vh;
-	padding: 1vh;
-	background-color: rgb(230, 230, 230);
-	display: flex;
-	flex-direction: column;
+#shape_06 {
+	width: 150px;
+	height: 150px;
+}
+
+#shape_07 {
+	width: 112.5px;
+	height: 150px;
 }
 
 button,
 #box_useless {
 	margin: 1vh;
-	font-family: "Inter";
-	font-weight: 300;
 	background-color: rgba(0, 0, 0, 0);
 	border: 1px solid rgb(0, 0, 0);
 	color: rgb(0, 0, 0);
@@ -112,21 +117,54 @@ button:focus {
 button,
 p {
 	text-align: center;
+	font-family: "Inter";
+	font-weight: 300;
 	font-size: 1vw;
 	line-height: 3vh;
 	padding: 1vh;
 }
 
 button > span {
-	transition: 0.3s ease all;
 	padding-right: 1vh;
 }
 
 button:hover > span {
-	transition: 0.5s ease all;
 	padding-right: 0.2vh;
 }
 
+.modify {
+	display: flex;
+}
+
+.button-modify {
+	flex-grow: 1;
+}
+
+#bold {
+	font-weight: 500;
+}
+
+#thin {
+	font-weight: 100;
+}
+
+#bold:hover,
+#regular:hover,
+#thin:hover,
+#sharp:hover,
+#smooth:hover {
+	padding: 0 1.5vh;
+}
+
+button > span,
+.modify button {
+	transition: 0.3s ease;
+}
+
 #box_useless {
-	height: 81.5%;
+	height: 74%;
+}
+
+p {
+	pointer-events: none;
 }
