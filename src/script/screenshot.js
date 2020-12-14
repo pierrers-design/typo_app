@@ -15,7 +15,7 @@ screenshot.addEventListener("click", (event) => {
 		.capturePage({
 			x: 0,
 			y: 0,
-			width: Math.round((window.innerWidth * 80) / 100),
+			width: Math.round((window.innerWidth * 79) / 100),
 			height: Math.round(window.innerHeight),
 		})
 		.then((img) => {

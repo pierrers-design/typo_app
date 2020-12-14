@@ -1,8 +1,8 @@
 {
 	"name": "typo-app",
-	"productName": "App Typographie",
+	"productName": "Normographe_Pierre_Roussel",
 	"version": "1.0.0",
-	"description": "Normaographe numérique",
+	"description": "Normographe numérique",
 	"main": "src/index.js",
 	"scripts": {
 		"start": "electron-forge start",
@@ -23,7 +23,7 @@
 	"config": {
 		"forge": {
 			"packagerConfig": {
-				"icon": "src/icons/win/icon.ico"
+				"icon": "src/icons/mac/icon.icns"
 			},
 			"makers": [
 				{
