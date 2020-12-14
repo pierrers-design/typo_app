@@ -22,7 +22,9 @@
 	"license": "MIT",
 	"config": {
 		"forge": {
-			"packagerConfig": {},
+			"packagerConfig": {
+				"icon": "src/icons/win/icon.ico"
+			},
 			"makers": [
 				{
 					"name": "@electron-forge/maker-squirrel",
@@ -38,11 +40,15 @@
 				},
 				{
 					"name": "@electron-forge/maker-deb",
-					"config": {}
+					"config": {
+						"name": "typo_app"
+					}
 				},
 				{
 					"name": "@electron-forge/maker-rpm",
-					"config": {}
+					"config": {
+						"name": "typo_app"
+					}
 				}
 			]
 		}
